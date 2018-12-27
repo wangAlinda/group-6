@@ -1,115 +1,106 @@
-@import "_mixin.scss";
-@import "common.scss";
-<<<<<<< HEAD
-.wrapper {
-=======
-.wrap {
->>>>>>> f2c233cd9b287502d97da68c34d458c149a20b5c
-    width: 100%;
-    height: 100%;
-    @include box_flex;
-    @include direction(column);
-<<<<<<< HEAD
-    @include justify(space-between);
-    padding: 0 pxTorem(15px);
-    @include sizing;
-}
-
-section {
-    @include flex;
-    overflow-y: scroll;
-    .search {
-        margin: pxTorem(10px) 0;
-        border: pxTorem(1px) solid #999;
-        padding: 0 pxTorem(15px);
-        @include sizing;
-        width: 100%;
-        @include box_flex;
-        height: pxTorem(40px);
-        @include align;
-        border-radius: pxTorem(6px);
-        input {
-            margin: 0 pxTorem(10px);
-            font-size: pxTorem(16px);
-            @include flex;
-            outline: 0;
-            border: 0;
-        }
-    }
-    .list {
-        width: 100%;
-        @include box_flex;
-        @include flexWrap;
-        dl {
-            width: 20%;
-            margin: pxTorem(10px) 0;
-            @include direction(column);
-            @include align;
-            @include box_flex;
-            @include justify;
-            dd {
-                img {
-                    width: pxTorem(45px);
-                    height: pxTorem(45px);
+        @import "_mixin.scss";
+        @import "common.scss";
+        .wrapper {
+            .wrap {
+                width: 100%;
+                height: 100%;
+                @include box_flex;
+                @include direction(column);
+                @include justify(space-between);
+                padding: 0 pxTorem(15px);
+                @include sizing;
+            }
+            section {
+                @include flex;
+                overflow-y: scroll;
+                .search {
+                    margin: pxTorem(10px) 0;
+                    border: pxTorem(1px) solid #999;
+                    padding: 0 pxTorem(15px);
+                    @include sizing;
+                    width: 100%;
+                    @include box_flex;
+                    height: pxTorem(40px);
+                    @include align;
+                    border-radius: pxTorem(6px);
+                    input {
+                        margin: 0 pxTorem(10px);
+                        font-size: pxTorem(16px);
+                        @include flex;
+                        outline: 0;
+                        border: 0;
+                    }
+                }
+                .list {
+                    width: 100%;
+                    @include box_flex;
+                    @include flexWrap;
+                    dl {
+                        width: 20%;
+                        margin: pxTorem(10px) 0;
+                        @include direction(column);
+                        @include align;
+                        @include box_flex;
+                        @include justify;
+                        dd {
+                            img {
+                                width: pxTorem(45px);
+                                height: pxTorem(45px);
+                            }
+                        }
+                        dt {
+                            @include center;
+                            font-size: pxTorem(16px);
+                        }
+                    }
+                }
+                .hot {
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .tip {
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
                 }
             }
-            dt {
-                @include center;
-                font-size: pxTorem(16px);
+            header {
+                width: 100%;
+                height: pxTorem(44px);
+                background: skyblue;
+                @include box_flex;
+                @include justify(space-between);
+                @include align;
+                padding: 0 pxTorem(15px);
+                @include sizing;
+                .Leftheader {
+                    font-size: pxTorem(18px);
+                    font-weight: bold;
+                }
+                .Rightheader {
+                    border: solid 1px #000;
+                    @include box_flex;
+                    @include justify(space-between);
+                    @include align;
+                    padding: pxTorem(8px) pxTorem(14px);
+                    border-radius: pxTorem(50px);
+                    .icon {
+                        font-size: pxTorem(16px);
+                        margin: 0 pxTorem(10px);
+                    }
+                }
+            }
+            section {
+                @include flex;
+                width: 100%;
+                background: #ccc;
+            }
+            footer {
+                width: 100%;
+                height: pxTorem(50px);
+                background: orchid;
             }
         }
-    }
-    .hot {
-        img {
-            display: block;
-            width: 100%;
-        }
-    }
-    .tip {
-        img {
-            display: block;
-            width: 100%;
-        }
-    }
-=======
-}
-
-header {
-    width: 100%;
-    height: pxTorem(44px);
-    background: skyblue;
-    @include box_flex;
-    @include justify(space-between);
-    @include align;
-    padding: 0 pxTorem(15px);
-    @include sizing;
-    .Leftheader {
-        font-size: pxTorem(18px);
-        font-weight: bold;
-    }
-    .Rightheader {
-        border: solid 1px #000;
-        @include box_flex;
-        @include justify(space-between);
-        @include align;
-        padding: pxTorem(8px) pxTorem(14px);
-        border-radius: pxTorem(50px);
-        .icon {
-            font-size: pxTorem(16px);
-            margin: 0 pxTorem(10px);
-        }
-    }
-}
-
-section {
-    @include flex;
-    width: 100%;
-    background: #ccc;
-}
-
-footer {
-    width: 100%;
-    height: pxTorem(50px);
-    background: orchid;
->>>>>>> f2c233cd9b287502d97da68c34d458c149a20b5c
-}
